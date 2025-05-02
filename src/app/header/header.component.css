@@ -1,0 +1,88 @@
+/* .app-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  .logo img { height: 60px; width: 250px }
+  .header-buttons { display: flex; gap: 10px; } */
+
+  .app-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .logo img {
+    height: 40px;
+    object-fit: contain;
+  }
+  
+  .header-buttons {
+    display: flex;
+    gap: 0.75rem;
+  }
+  
+  .btn {
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.95rem;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  .btn-secondary {
+    background-color: #e0e0e0;
+    color: #333;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #c7c7c7;
+  }
+  
+
+
+  /*
+printing CSS
+  */
+
+  /* map-print.component.css */
+/* Hide offscreen but keep renderable */
+.print-container {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+  width: 1000px;   /* set your "paper" width */
+  background: white;
+  visibility: hidden; /* keep it renderable but invisible */
+}
+
+.map-snapshot {
+  width: 100%;
+  height: 600px;   /* match your map height */
+}
+.annotations {
+  padding: 1rem;
+  font-family: Arial, sans-serif;
+}

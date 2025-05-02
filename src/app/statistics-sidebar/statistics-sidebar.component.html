@@ -1,0 +1,31 @@
+<div #sidebar class="sidebar">
+    <div class="widget">
+      <h5>Admin 0 Layer</h5>
+      <p>Total: {{ totlasStatistics?.allAdmin0Count }}</p>
+      <p>Selected: {{ selectedStatistics?.selectedAdmin0Count }}</p>
+      <div class="widget-buttons">
+        <button class="btn btn-fill" (click)="fillToMap('admin0')" data-html2canvas-ignore>Fill to Map</button>
+        <button class="btn btn-export" (click)="exportToCSV('admin0')" data-html2canvas-ignore>Export CSV</button>
+      </div>
+    </div>
+
+    <div class="widget">
+      <h5>Admin 1 Layer</h5>
+      <p>Total: {{ totlasStatistics?.allAdmin1Count }}</p>
+      <p>Selected: {{ selectedStatistics?.selectedAdmin1Count }}</p>
+      <div class="widget-buttons">
+        <button class="btn btn-fill" (click)="fillToMap('admin1')" data-html2canvas-ignore>Fill to Map</button>
+        <button class="btn btn-export" (click)="exportToCSV('admin1')" data-html2canvas-ignore>Export CSV</button>
+      </div>
+    </div>
+
+    <div class="widget">
+      <h5>Admin 2 Layer</h5>
+      <p>Total: {{ totlasStatistics?.allAdmin2Count }}</p>
+      <p>Selected: {{ selectedStatistics?.selectedAdmin2Count }}</p>
+      <div class="widget-buttons">
+        <button class="btn btn-fill" (click)="fillToMap('admin2')" data-html2canvas-ignore>Fill to Map</button>
+        <button class="btn btn-export" (click)="exportToCSV('admin2')" data-html2canvas-ignore>Export CSV</button>
+      </div>
+    </div>
+  </div>

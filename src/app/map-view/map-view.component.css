@@ -1,0 +1,8 @@
+.map-container {
+    position: absolute;
+    top: 60px; /* height of header */
+    left: 280px; /* width of left sidebar */
+    right: 280px; /* width of right sidebar */
+    bottom: 0;
+    z-index: 1;
+  }

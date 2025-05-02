@@ -1,0 +1,43 @@
+<div class="left-sidebar">
+    <h4>Filter Layers</h4>
+  
+    <h3>Admin 0</h3>
+    <mat-form-field class="full-width">
+      <mat-label>Select Admin 0</mat-label>
+      <mat-select [(ngModel)]="selectedAdmin0Ids" multiple (selectionChange)="onAdmin0Change()">
+        <mat-option *ngFor="let admin0 of admin0List" [value]="admin0.id">
+          {{ admin0.name }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  
+    @if (isAdmin1Visible) {
+      <h3>Admin 1</h3>
+      <mat-form-field class="full-width">
+        <mat-label>Select Admin 1</mat-label>
+        <mat-select [(ngModel)]="selectedAdmin1Ids" multiple (selectionChange)="onAdmin1Change()">
+          <mat-option *ngFor="let admin1 of filteredAdmin1List" [value]="admin1.id">
+            {{ admin1.name }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    }
+  
+    @if (isAdmin2Visible) {
+      <h3>Admin 2</h3>
+      <mat-form-field class="full-width">
+        <mat-label>Select Admin 2</mat-label>
+        <mat-select [(ngModel)]="selectedAdmin2Ids" multiple>
+          <mat-option *ngFor="let admin2 of filteredAdmin2List" [value]="admin2.id">
+            {{ admin2.name }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    }
+  
+    <div class="sidebar-buttons">
+      <button class="btn btn-submit" (click)="applyFilters()">Submit</button>
+      <button class="btn btn-clear" (click)="clearFilters()">Clear Selection</button>
+    </div>
+  </div>
+  
