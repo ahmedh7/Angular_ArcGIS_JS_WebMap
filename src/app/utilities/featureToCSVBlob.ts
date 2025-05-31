@@ -1,7 +1,8 @@
 export function featuresToCsvBlob(
   features: __esri.Graphic[],
   filename: string
-): { name: string; blob: Blob } {
+  ): { name: string; blob: Blob } 
+  {
   if (!features.length) {
     return {
       name: filename,

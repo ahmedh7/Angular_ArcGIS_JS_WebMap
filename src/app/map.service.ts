@@ -13,7 +13,8 @@ import Expand from "@arcgis/core/widgets/Expand";
 import FeatureLayerView from '@arcgis/core/views/layers/FeatureLayerView';
 import html2canvas from 'html2canvas';
 import jsPDF from 'jspdf';
-
+import Search from "@arcgis/core/widgets/Search";
+import LayerSearchSource from "@arcgis/core/widgets/Search/LayerSearchSource";
 
 @Injectable({
   providedIn: 'root'
@@ -137,6 +138,28 @@ export class MapService {
       content: bmGallery
     });
     this.mapView?.ui.add(bmGalleryExpand, "top-right");
+
+
+    const searchSource = new LayerSearchSource({
+        layer: new FeatureLayer({
+        url: ADMIN_LAYER_URLS.ADMIN0,
+        outFields: ["*"]
+        })
+      });
+    const searchWidget = new Search({
+      view: this.mapView,
+      sources: 
+      [
+        searchSource
+      ]
+    });
+    const searchExpand = new Expand({
+      expandIcon: "search",
+      view: this.mapView,
+      content: searchWidget
+    });
+    this.mapView?.ui.add(searchExpand, "top-right");
+
   }
 
   setAllAdmin0() {
