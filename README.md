@@ -5,6 +5,21 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 This project is a GIS web-based mapping application built with the **Angular Framework** and the **ArcGIS JavaScript API**, designed to visualize and interact with administrative boundary data.
 
+---
+
+## 🖼️ Screenshots
+
+### 📍 Map Usage
+- ![MapUsage](src\assets\images\screenshots\screen.png)
+
+### 📍 Print PDF
+- ![PrintedPDF](src\assets\images\screenshots\pdf.png)
+
+### 📍CSV Export
+- ![CSV export](src\assets\images\screenshots\csv.png)
+
+---
+
 ## 🗺️ Features
 
 1. **Interactive Web Map Page**
