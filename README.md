@@ -10,13 +10,13 @@ This project is a GIS web-based mapping application built with the **Angular Fra
 ## 🖼️ Screenshots
 
 ### 📍 Map Usage
-- ![MapUsage](src\assets\images\screenshots\screen.png)
+- ![MapUsage](src/assets/images/screenshots/screen.png)
 
 ### 📍 Print PDF
-- ![PrintedPDF](src\assets\images\screenshots\pdf.png)
+- ![PrintedPDF](src/assets/images/screenshots/pdf.png)
 
 ### 📍CSV Export
-- ![CSV export](src\assets\images\screenshots\csv.png)
+- ![CSV export](src/assets/images/screenshots/csv.png)
 
 ---
 
